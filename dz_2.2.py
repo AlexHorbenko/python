@@ -13,4 +13,7 @@ left_4, right_3 = divmod(right_2, i)
 #print(user_number)
 #print(number)
 #print(left_1, left_2, left_3, left_4, right_3)
-print(right_3, left_4, left_3, left_2, left_1)
+#print(right_3, left_4, left_3, left_2, left_1)
+
+new = right_3 * 10000 + left_4 * 1000 + left_3 * 100 + left_2 * 10 + left_1 * 1
+print(new)
