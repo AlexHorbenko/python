@@ -8,8 +8,8 @@ minus = first_number - second_number
 multiple = first_number * second_number
 divide = 'Ділення на нуль'
 
-#print(first_number)
-#print(second_number)
+# print(first_number)
+# print(second_number)
 
 if action == 1:
     print(sum)
@@ -25,6 +25,23 @@ else:
                     print(divide)
                 else:
                     divide = first_number / second_number
-                    print (divide)
+                    print(divide)
             else:
-                print ('The end')
+                print('The end')
+
+#*********** Second variation ******************
+
+#if action == 1:
+#    print(sum)
+#elif action == 2:
+#    print(minus)
+#elif action == 3:
+#    print(multiple)
+#elif action == 4:
+#    if second_number == 0:
+#        print(divide)
+#    else:
+#        divide = first_number / second_number
+#        print(divide)
+#else:
+#    print('The end')
