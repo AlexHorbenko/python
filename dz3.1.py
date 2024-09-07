@@ -38,7 +38,7 @@ else:
 #elif action == 3:
 #    print(multiple)
 #elif action == 4:
-#    if second_number == 0:
+#    if not bool(second_number):
 #        print(divide)
 #    else:
 #        divide = first_number / second_number
