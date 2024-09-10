@@ -28,6 +28,7 @@ else:
     len(initial_list) == 1
     new_list = []
     new_list.append(initial_list)
+    #initial_list.insert(0,new_list)
     print(new_list)
 
 
