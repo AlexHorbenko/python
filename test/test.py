@@ -57,3 +57,9 @@ print(type(j))
 
 #*************************************** Методи *******************************
 #https://uk.from-locals.com/python-collections-counter/
+
+#************************************ Git *********************************
+# git pull origin main              Синхронізація змін, вирішення конфліктів
+# git add .                         Додати зміни
+# git commit -m "Resolved merge conflicts"  Коміт з нормальною назвою
+# git push origin main              Відправити на GitHub
