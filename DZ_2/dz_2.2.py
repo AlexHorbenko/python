@@ -2,7 +2,7 @@ import math
 
 user_number = float(input("Введіть п'ятизначне число:"))
 number = int(user_number)
-x = 40000
+x = 10000
 y = 1000
 z = 100
 i = 10
