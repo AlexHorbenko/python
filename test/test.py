@@ -66,3 +66,30 @@ print(type(j))
 # git add .                         Додати зміни
 # git commit -m "Resolved merge conflicts"  Коміт з нормальною назвою
 # git push origin main              Відправити на GitHub
+
+#******************************** Class **********************************
+# Визначення Класу
+# class Car:
+# wheels = 4 # Атрибут класу
+#
+#     def __init__(self, make, model): # клас Car визначається з двома атрибутами: make і model. Конструктор __init__ встановлює значення цих атрибутів при створенні нового об'єкта.
+#         self.make = make
+#         self.model = model
+#
+# Метод екземпляра
+#     def start_engine(self):
+#         return "Engine started!"
+#  Створення Об'єкта
+#  my_car = Car(make="Toyota", model="Camry")
+#  my_car - це об'єкт класу Car, який має значення make рівне "Toyota" і model рівне "Camry"
+
+# Можна коротше записати цей процес в один рядок:
+#   my_car = Car("Toyota", "Camry")
+
+# Робота з Об'єктом
+# print(my_car.make)    # Вивід: Toyota
+# print(my_car.model)   # Вивід: Camry
+
+# Виклик методу екземпляра
+# result = my_car.start_engine()
+# print(result)  # Вивід: Engine started!
