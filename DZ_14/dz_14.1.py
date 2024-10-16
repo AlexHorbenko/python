@@ -1,3 +1,10 @@
+class UserException(Exception):
+    def __init__(self, message):
+        self.message = message
+
+    def get_exception_message(self):
+        return self.message
+
 class Human:
 
     def __init__(self, gender, age, first_name, last_name):
@@ -25,6 +32,9 @@ class Group:
         self.group = set()
 
     def add_student(self, student):
+        max_amount = 10
+        if len(self.group) >= max_amount:
+            raise UserException("Додали 11 студента")
         self.group.add(student)
 
     def delete_student(self, last_name):
@@ -55,6 +65,13 @@ gr = Group('PD1')
 gr.add_student(st1)
 gr.add_student(st2)
 print(gr)
+
+try:
+    for i in range(9):
+        gr.add_student(Student('Male', 44, f'Student{i}', f'Lastname{i}', f'AN{i}'))
+except UserException as error:
+    print(error)
+
 assert str(gr.find_student('Jobs')) == str(st1), 'Test1'
 assert gr.find_student('Jobs2') is None, 'Test2'
 assert isinstance(gr.find_student('Jobs'), Student) is True, 'Метод поиска должен возвращать экземпляр'
